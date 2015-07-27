@@ -1,0 +1,102 @@
+@import url('reset.css');
+
+@import url(http://fonts.googleapis.com/css?family=Bitter|Open+Sans);
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    border-top: 4px solid #4E7482;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+a, a:link, a:visited {
+    color: #086183;
+    transition: color 0.4s;
+}
+
+a:hover, a:active {
+    color: #527c62;
+    color: #04973b;
+}
+
+a:active {
+    color: #04973b;
+    background: #E2F5FC;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin: 18px 0 6px 0;
+}
+
+h1:first-child {
+    margin-top: 0;
+}
+
+#main {
+    max-width: 690px;
+    margin: 50px auto;
+}
+
+header {
+    margin: 0 0 30px 0;
+    overflow: hidden;
+    height: 35px;
+}
+
+header .name {
+    font-family: 'Bitter', serif;
+    font-size: 32px;
+    float: left;
+    line-height: 35px;
+    margin: 0;
+}
+
+header .name a, header .name a:link, header .name a:visited {
+    color: #000;
+    color: #192326;
+    text-decoration: none;
+    transition: color 0.8s;
+}
+
+header .name a:hover, header .name a:active {
+    color: #1F6639;
+    color: #367d51;
+    color: #527c62;
+}
+
+nav {
+    float: right;
+    height: 35px;
+}
+
+nav li {
+    float: left;
+    font-size: 16px;
+    line-height: 35px;
+    margin: 0 0 0 20px;
+}
+
+nav a, nav a:link, nav a:visited {
+    color: #192326;
+    text-decoration: none;
+}
+
+#content {
+    clear: both;
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 14px;
+    margin: 0 0 1em 0;
+}
+
+.profile-picture {
+    margin: 0 0 25px 25px;
+    float: right;
+}
