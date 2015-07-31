@@ -1,6 +1,6 @@
 @import url('reset.css');
 
-@import url(http://fonts.googleapis.com/css?family=Bitter|Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Bitter|Open+Sans:600,400);
 
 html {
     height: 100%;
@@ -18,7 +18,6 @@ a, a:link, a:visited {
 }
 
 a:hover, a:active {
-    color: #527c62;
     color: #04973b;
 }
 
@@ -30,11 +29,17 @@ a:active {
 
 h1 {
     font-size: 24px;
-    margin: 18px 0 6px 0;
+    margin: 22px 0 6px 0;
 }
 
 h1:first-child {
     margin-top: 0;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 0 6px 0;
 }
 
 #main {
@@ -44,7 +49,6 @@ h1:first-child {
 
 header {
     margin: 0 0 30px 0;
-    overflow: hidden;
     height: 35px;
 }
 
@@ -57,15 +61,12 @@ header .name {
 }
 
 header .name a, header .name a:link, header .name a:visited {
-    color: #000;
     color: #192326;
     text-decoration: none;
     transition: color 0.8s;
 }
 
 header .name a:hover, header .name a:active {
-    color: #1F6639;
-    color: #367d51;
     color: #527c62;
 }
 
@@ -79,11 +80,16 @@ nav li {
     font-size: 16px;
     line-height: 35px;
     margin: 0 0 0 20px;
+    list-style: none;
 }
 
 nav a, nav a:link, nav a:visited {
     color: #192326;
     text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+    color: #AC5C4B;
 }
 
 #content {
@@ -94,6 +100,17 @@ p {
     line-height: 1.5em;
     font-size: 14px;
     margin: 0 0 1em 0;
+}
+
+ul {
+    margin: 0 0 14px 1em;
+}
+
+li {
+    line-height: 1.5em;
+    font-size: 14px;
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 .profile-picture {
