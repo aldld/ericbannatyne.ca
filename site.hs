@@ -33,7 +33,7 @@ cleanIndex url
         idx = "index.html"
 
 main :: IO ()
-main = hakyll $ do
+main = hakyllWith config $ do
 
     -- Static files
     match ("favicon.ico" .||. "images/**" .||. "files/**") $ do
@@ -118,7 +118,18 @@ main = hakyll $ do
 
 
 --------------------------------------------------------------------------------
+
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
+
+--------------------------------------------------------------------------------
+
+-- Deploy configuration
+config :: Configuration
+config = defaultConfiguration
+    { deployCommand = "rsync --checksum -arv _site/* \
+            \aldld@aldld.webfactional.com:webapps/ericbannatyne_app"
+    }
+

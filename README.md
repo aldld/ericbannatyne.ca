@@ -1,8 +1,4 @@
 Source code for my personal website hosted at http://ericbannatyne.ca.
 
-# TODO:
-- Add favicon
-- Courses page
-- Projects page
-- Blog
-
+This site is powered by [Hakyll](https://jaspervdj.be/hakyll/), a static site generator
+written in Haskell.

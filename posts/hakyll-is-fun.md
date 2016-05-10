@@ -1,6 +1,6 @@
 ---
 title: Hakyll is Fun!
-date: 2016-05-06
+date: 2016-05-10
 ---
 
 Now that the semester is over, and I can finally take a break from the constant barrage of coding
