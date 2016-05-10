@@ -1,0 +1,43 @@
+<body class="blog-body">
+
+    <div class="container">
+
+        <div class="blog-header">
+            <h1 class="blog-title"><a href="/">Eric Bannatyne</a></h1>
+            <p class="lead blog-description">A place for projects and ideas, mostly computer science and math stuff.</p>
+
+            $partial("templates/top-nav.html")$
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-8 blog-main">
+
+                $body$
+
+            </div><!-- /.blog-main -->
+
+            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                <div class="sidebar-module sidebar-module-inset">
+                    <h4>About</h4>
+                    <p>I study Computer Science and Math at the University of Toronto. I'm interested in all areas of CS,
+                        but my main interests are in logic, computability, complexity theory, algorithms, and machine learning.</p>
+
+                    <p><a href="/archive">Archive</a></p>
+                </div>
+                
+                <div class="sidebar-module">
+                    <h4>Elsewhere</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="https://github.com/aldld">GitHub</a></li>
+                        <li><a href="https://ca.linkedin.com/pub/eric-bannatyne/8a/84a/104">LinkedIn</a></li>
+                    </ol>
+                </div>
+            </div><!-- /.blog-sidebar -->
+
+        </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    $partial("templates/footer.html")$
+</body>
