@@ -106,6 +106,13 @@ main = hakyll $ do
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
+    -- 404 page - *without* relativization.
+    match "404.html" $ do
+        route idRoute
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/page.html" defaultContext
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+
     -- Template files
     match "templates/*" $ compile templateBodyCompiler
 
