@@ -56,6 +56,17 @@ main = hakyllWith config $ do
             >>= relativizeUrls
             >>= cleanIndexUrls
 
+    -- Blog post drafts
+    match "drafts/*" $ do
+        let pandocOptions = defaultHakyllWriterOptions { writerHTMLMathMethod = MathJax "" }
+        route $ cleanRoute
+        compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
+            >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= loadAndApplyTemplate "templates/blog.html"    postCtx
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= relativizeUrls
+            >>= cleanIndexUrls
+
     -- Blog index
     create ["blog.html"] $ do
         route cleanRoute
@@ -129,7 +140,7 @@ postCtx =
 -- Deploy configuration
 config :: Configuration
 config = defaultConfiguration
-    { deployCommand = "rsync --checksum -arv _site/* \
+    { deployCommand = "rsync --checksum -arv --exclude drafts/ _site/* \
             \aldld@aldld.webfactional.com:webapps/ericbannatyne_app"
     }
 
