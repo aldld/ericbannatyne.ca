@@ -243,3 +243,15 @@ h6, .h6 {
     overflow: hidden;
     float: right;
 }
+
+/*
+ * Figures
+ */
+.figure {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.figure .caption {
+    margin: 10px 0 0 0;
+}
