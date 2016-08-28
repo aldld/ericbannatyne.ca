@@ -51,8 +51,8 @@ graphs, which, under the standard definition, do not permit self-loops.
 
 The rest of this post focuses on the first couple sections of Rivest and
 Vuillemin's paper, which gives the basic definitions needed to approach the
-problem, as well as a framework for studying the decision tree complexity of
-arbitrary functions, or string properties (not necessarily graph properties).
+problem, as well as some motivation for the theorem and why it can only hold
+for monotone graph properties.
 
 Some Basic Definitions
 ----------------------
