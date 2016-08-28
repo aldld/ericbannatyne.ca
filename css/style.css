@@ -252,6 +252,7 @@ h6, .h6 {
     text-align: center;
 }
 
-.figure .caption {
+.figure p.caption {
     margin: 10px 0 0 0;
+    font-size: small;
 }
