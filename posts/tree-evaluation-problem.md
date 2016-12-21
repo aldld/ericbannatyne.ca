@@ -3,6 +3,12 @@ title: L versus P and The Tree Evaluation Problem
 date: 2016-05-24
 ---
 
+**Update:** An extended abstract I wrote that outlines the Tree Evaluation
+Problem and summarizes some of the results in
+[my longer write-up](/files/tree-evaluation-problem/csc494_writeup.pdf) was
+published in the *[Review of Undergraduate Computer Science](http://rucs.ca/)*.
+Check it out [on the RUCS website](http://rucs.ca/theory-of-computation/branch-program-complexity).
+
 In a broad sense, one of the major themes in complexity theory research involves
 trying to understand the relationships between different complexity classes.
 **P** versus **NP** is the most famous example, but there
@@ -52,7 +58,11 @@ the root, so that each internal node gets the value of its function when applied
 to the values of its two children. The goal of the (binary) tree evaluation
 problem, denoted $FT_2^h(k)$, is to find the value of the root.
 
-![Illustration of an input to the height-4 binary TEP.](/images/tree-evaluation-problem/tep-height4.png)
+<div class="figure">
+<img src="../../images/tree-evaluation-problem/tep-height4.png" alt="Illustration of an input to the height-4 binary TEP."
+    style="width:450px;height:309px">
+<p class="caption">Illustration of an input to the height-4 binary TEP.</p>
+</div>
 
 It's easy to solve $FT_2^h(k)$ in polynomial time, which you can check for
 yourself. However so far nobody has come up with an algorithm to solve this
