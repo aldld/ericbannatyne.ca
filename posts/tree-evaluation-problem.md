@@ -7,7 +7,7 @@ date: 2016-05-24
 Problem and summarizes some of the results in
 [my longer write-up](/files/tree-evaluation-problem/csc494_writeup.pdf) was
 published in the *[Review of Undergraduate Computer Science](http://rucs.ca/)*.
-Check it out [on the RUCS website](http://rucs.ca/theory-of-computation/branch-program-complexity).
+Check it out [on the RUCS website](http://rucs.ca/theory-of-computation/branching-program-complexity).
 
 In a broad sense, one of the major themes in complexity theory research involves
 trying to understand the relationships between different complexity classes.
