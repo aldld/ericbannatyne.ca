@@ -117,6 +117,21 @@ main = hakyllWith config $ do
                 >>= relativizeUrls
                 >>= cleanIndexUrls
 
+    -- Courses page
+    match "courses.html" $ do
+        route cleanRoute
+        compile $ do
+            let coursesCtx =
+                    constField "title" "Courses &ndash; Eric Bannatyne" `mappend`
+                    defaultContext
+
+            getResourceBody
+                >>= loadAndApplyTemplate "templates/page.html"    coursesCtx
+                >>= loadAndApplyTemplate "templates/default.html" coursesCtx
+                >>= applyAsTemplate coursesCtx
+                >>= relativizeUrls
+                >>= cleanIndexUrls
+
     -- 404 page - *without* relativization.
     match "404.html" $ do
         route idRoute
