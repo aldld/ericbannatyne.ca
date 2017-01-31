@@ -115,7 +115,7 @@ h6, .h6 {
     float: left;
 }
 
-/* 
+/*
  * Navigation
  */
 .top-nav {
@@ -255,4 +255,30 @@ h6, .h6 {
 .figure p.caption {
     margin: 10px 0 0 0;
     font-size: small;
+}
+
+/*
+ * Tables
+ */
+table {
+    margin: 10px auto 30px auto;
+    font-size: 16px;
+}
+
+thead {
+    border-bottom: 2px solid #000;
+    padding: 0 0 5px 0;
+    color: #000;
+}
+
+th {
+    padding: 5px 60px 10px 2px;
+}
+
+td {
+    padding: 10px 60px 0 2px;
+}
+
+tr:hover {
+    color: #000;
 }
