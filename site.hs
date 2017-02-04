@@ -32,6 +32,18 @@ cleanIndex url
     where
         idx = "index.html"
 
+customPandocCompiler :: Compiler (Item String)
+customPandocCompiler = do
+    csl <- load $ fromFilePath "assets/acm-sig-proceedings-long-author-list.csl"
+    bib <- load $ fromFilePath "assets/citations.bib"
+    fmap write (getResourceString >>= read csl bib)
+    where
+        read = readPandocBiblio defaultHakyllReaderOptions
+        write = writePandocWith writerOptions
+
+writerOptions :: WriterOptions
+writerOptions = defaultHakyllWriterOptions { writerHTMLMathMethod = MathJax "" }
+
 main :: IO ()
 main = hakyllWith config $ do
 
@@ -40,16 +52,25 @@ main = hakyllWith config $ do
         route idRoute
         compile copyFileCompiler
 
+    -- Bibliography management
+    match "assets/*.bib" $ compile biblioCompiler
+    match "assets/*.csl" $ compile cslCompiler
+
     -- CSS
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
 
+    -- JavaScript
+    match "js/*" $ do
+        route idRoute
+        compile copyFileCompiler
+
     -- Blog posts
     match "posts/*" $ do
         let pandocOptions = defaultHakyllWriterOptions { writerHTMLMathMethod = MathJax "" }
         route $ cleanRoute
-        compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
+        compile $ customPandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/blog.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx
@@ -60,7 +81,7 @@ main = hakyllWith config $ do
     match "drafts/*" $ do
         let pandocOptions = defaultHakyllWriterOptions { writerHTMLMathMethod = MathJax "" }
         route $ cleanRoute
-        compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
+        compile $ customPandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/blog.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" postCtx

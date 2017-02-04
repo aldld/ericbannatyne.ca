@@ -282,3 +282,10 @@ td {
 tr:hover {
     color: #000;
 }
+
+/*
+ * Footnotes
+ */
+.footnotes {
+    font-size: small;
+}
