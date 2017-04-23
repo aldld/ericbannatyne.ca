@@ -113,6 +113,7 @@ h6, .h6 {
     font-size: 20px;
     color: #999;
     float: left;
+    clear: left;
 }
 
 /*
