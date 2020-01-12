@@ -197,7 +197,7 @@ postCtx =
 -- Deploy configuration
 config :: Configuration
 config = defaultConfiguration
-  { deployCommand = "rsync --checksum -arv --exclude drafts/ _site/* \
-      \aldld@aldld.webfactional.com:webapps/ericbannatyne_app"
+  { deployCommand =
+    "netlify deploy --dir=_site --prod --message='Hakyll deploy'"
   }
 

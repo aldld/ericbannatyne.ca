@@ -7,3 +7,6 @@ _site
 .stack-work/
 drafts/
 stack.yaml.lock
+
+# Local Netlify folder
+.netlify
