@@ -1,0 +1,17 @@
+{
+  "firstName": "Eric",
+  "lastName": "Bannatyne",
+  "phoneNumber": "(650) 334-6524",
+  "websiteUrl": "ericb.xyz",
+  "education": [
+    {
+      "startDate": "start date",
+      "endDate": "end date",
+      "institution": "University of Toronto"
+    },
+    {
+      "startDate": "123456",
+      "institution": "Asdf"
+    }
+  ]
+}

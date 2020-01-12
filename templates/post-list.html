@@ -1,7 +1,6 @@
-<ul>
-    $for(posts)$
-        <li>
-            <a href="$url$">$title$</a>&nbsp;<span class="post-list-date">&mdash; $date$</span>
-        </li>
-    $endfor$
-</ul>
+$for(posts)$
+    <section class="blog-index-post">
+        <h3><a href="$url$">$title$</a></h3>
+        <p class="post-list-date">Posted on $date$</p>
+    </section>
+$endfor$

@@ -1,43 +1,16 @@
 <body class="blog-body">
 
-    <div class="container">
+    <section class="container">
 
-        <div class="blog-header">
+        <header class="global-header">
             <h1 class="blog-title"><a href="/">Eric Bannatyne</a></h1>
-            <p class="lead blog-description">A place for theory of computation, code, and coffee.</p>
 
             $partial("templates/top-nav.html")$
-        </div>
+        </header>
 
-        <div class="row">
+        $body$
 
-            <div class="col-sm-8 blog-main">
-
-                $body$
-
-            </div><!-- /.blog-main -->
-
-            <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-                <div class="sidebar-module sidebar-module-inset">
-                    <h4>About</h4>
-                    <p>I study Computer Science and Math at the University of Toronto.
-                    Sometimes I write about computer science, coding, and coffee.</p>
-
-                    <p><a href="/archive">Archive</a></p>
-                </div>
-
-                <div class="sidebar-module">
-                    <h4>Elsewhere</h4>
-                    <ol class="list-unstyled">
-                        <li><a href="https://github.com/aldld">GitHub</a></li>
-                        <li><a href="https://ca.linkedin.com/pub/eric-bannatyne/8a/84a/104">LinkedIn</a></li>
-                    </ol>
-                </div>
-            </div><!-- /.blog-sidebar -->
-
-        </div><!-- /.row -->
-
-    </div><!-- /.container -->
+    </section>
 
     $partial("templates/footer.html")$
 </body>

@@ -1,5 +1,5 @@
 ---
-title: The Rivest-Vuillemin Theorem, Part 1: Graph Properties and Scorpions
+title: "The Rivest-Vuillemin Theorem, Part 1: Graph Properties and Scorpions"
 date: 2016-08-28
 ---
 

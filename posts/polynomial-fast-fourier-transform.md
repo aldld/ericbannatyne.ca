@@ -74,7 +74,7 @@ linear equations.[^2]
 [^2]: This system of equations is defined using a Vandermonde matrix, which
 we'll see in more detail later.
 
-This leads us to the \emph{point-value representation} of a polynomial: Given
+This leads us to the *point-value representation* of a polynomial: Given
 points $x_0,\dots,x_{n-1} \in \mathbb{C}$, a degree-$n-1$ polynomial $A(x)$ can
 be represented by the set
 

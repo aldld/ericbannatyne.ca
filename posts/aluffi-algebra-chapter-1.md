@@ -1,5 +1,5 @@
 ---
-title: Aluffi's Algebra: Chapter 0: Chapter 1
+title: "Aluffi's Algebra: Chapter 0: Chapter 1"
 date: 2017-01-07
 ---
 

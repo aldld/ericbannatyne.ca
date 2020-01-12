@@ -1,5 +1,5 @@
 ---
-title: hasp: Writing a Lisp Interpreter in Haskell
+title: "hasp: Writing a Lisp Interpreter in Haskell"
 date: 2016-08-25
 ---
 

@@ -3,3 +3,7 @@ cabal.sandbox.config
 dist/
 _cache
 _site
+.sass-cache/
+.stack-work/
+drafts/
+stack.yaml.lock

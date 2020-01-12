@@ -1,8 +1,10 @@
-<div class="blog-post">
-    <h2 class="blog-post-title">$title$</h2>
-    $if(date)$
-         <p class="blog-post-meta">Posted on $date$</p>
-    $endif$
+<article class="blog-post">
+    <header class="post-header">
+        <h2 class="blog-post-title">$title$</h2>
+        $if(date)$
+             <p class="blog-post-meta">Posted on $date$</p>
+        $endif$
+    </header>
 
     $body$
-</div><!-- /.blog-post -->
+</article>
