@@ -386,6 +386,6 @@ transformers), add unit tests and do some bug squashing.
 The source code for the hasp interpreter is freely available on the
 [hasp GitHub repo](https://github.com/aldld/hasp). If you are interested in
 contributing to hasp, feel free to fork the repo and submit a pull request. If
-you have any comments, questions, or suggestions, or if you give hasp a bug and
+you have any comments, questions, or suggestions, or if you give hasp a try and
 you find a bug, feel free to email me, or
 [create an issue](https://github.com/aldld/hasp/issues) on the hasp GitHub page.
